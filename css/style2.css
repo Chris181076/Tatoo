@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
 }
-
 .row-iimit-size {
     min-width: 430px;
     width: 100%;
@@ -10,7 +9,6 @@
 }
 .flex {
     display: flex;
-
 }
 #head{
     height: 300px;
@@ -38,7 +36,6 @@
 #MySidenav>ul {
     list-style-type: none;
 }
-
 img {
     display: flex;
 }
@@ -65,26 +62,42 @@ main {
     background-color: black;
     position: relative;
     margin-top:300px;
-
 }
-body>main>#images>img {
+.titre {
+    padding-top: 30px;
+}
+
+.titre>img {
+    width: 95px;
+    height: 31px;
+    padding-left: 35%;
+}
+main>.titre>h1 {
+    font-size: 15px;
+    color: #EDC86E;
+    font-family: 'Comfortaa', sans-serif;
+    margin: 0 auto;
+    padding-left: 27%;
+   
+}
+main>figure {
+    display: flex;
+    padding-top: 30px;
+}
+main>figure>img {
     width: 159px;
     height: 212px;
-    margin: 0  auto;
-    padding: 40px;;
-}
-body>main>h1{
-    display: block;
-    color:  #EDC86E;
-    font-size: 10px;
-    text-align: center;
-    padding-left: 80px;
-    padding-right: 80px;
-    font-family: 'Comfortaa', sans-serif;
+    padding-left: 30px;
 }
 .size{
-    width: 159px;
-    height: 212px;
+    font-size: 15px;
+}
+main>p {
+    font-size: 10px;
+    color: #EDC86E;
+    padding-top: 30px;
+    font-family: 'Comfortaa', sans-serif;
+    text-align: center;
 }
 .button {
     width: 113px;
@@ -103,6 +116,4 @@ body>main>h1{
     align-items: center;
     height:31px;
 }
-
-
 
