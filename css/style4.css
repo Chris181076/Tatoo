@@ -43,8 +43,7 @@ img {
     display: flex;
 }
 #burger {
-    cursor: pointer;
-   
+    cursor: pointer;   
 }
 
 #burger>img {
@@ -58,8 +57,9 @@ img {
     padding-left: 230px;
     padding-top: 70px;
 }
+
 main {
-    height: 1300px;
+    height: 1700px;
     width: 430px;
     background-color: black;
     position: relative;
@@ -80,61 +80,101 @@ main>.titre>h1 {
     color: #EDC86E;
     font-family: 'Comfortaa', sans-serif;
     margin: 0 auto;
-    padding-left: 24%;
-   
+    padding-left: 39%;
 }
-.size{
-    font-size: 15px;
-}
-main>p {
-    font-size: 10px;
-    color: #EDC86E;
-    padding: 30px 30px;
-    font-family: 'Comfortaa', sans-serif;
-    text-align: center;
-    
-}
-
 #grille {
     width: 100%;
-    max-width: 430px;
+    max-width: 250px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     justify-content: center;
-   
+    
 }
-.block>img {
-    width: 159px;
-    height: 212px;
-    padding-top: 30px;
+body>main>#grille>.block>.carreJaune {
+    width: 30px;
+    height: 30px;
+    background-color: #EDC86E;
+    
+}
+body>main>#grille>.block>.carreJaune>img {
+    width: 30px;
+    height: 30px;
+    display: block;
+    
+}
+body>main>#grille>.block>p {
+    font-size: 15px;
+    font-family: 'Comfortaa', sans-serif;
+    color: #EDC86E;
+    
     
 }
 .block {
-    padding-left: 22px;
+    padding-top: 10px;
 }
-main>p {
-    font-size: 10px;
-    color: #EDC86E;
+body>main>.formulaire{ /* je n'arrive pas à le centrer*/
     padding-top: 30px;
-    font-family: 'Comfortaa', sans-serif;
-    text-align: center;
 }
-.button {
-    width: 113px;
-    height: 31px;
+body>main>.formulaire>.encart {
+    width: 162px;
+    height: 45px;
     background-color: #EDC86E;
-    margin: 0 auto;
-    margin-top: 40px;
-    border-radius: 10px;
+    border-radius: 15px;
+    margin-top: 20px;
 }
-.button>p {
-    font-family:'Comfortaa', sans-serif;
-    font-size: 12px;
-    font-weight: bold;
+body>main>.formulaire>.encart>p {
+    color: #000;
+    font-family: 'Comfortaa', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    height:31px;
+    height: 45px;
+    font-weight: 650;
 }
+body>main>.formulaire>.encart1 {
+    width: 300px;
+    height: 182px;
+    background-color: #EDC86E;
+    border-radius: 15px;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+
+}
+body>main>.formulaire>.encart1>p{
+    color: #000;
+    font-family: 'Comfortaa', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    font-weight: 650;
+}
+body>main>.carte {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+body>main>h1 {
+    font-size: 15px;
+    color: #EDC86E;
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 500;
+}
+body>main>.carreJaune {
+    width: 30px;
+    height: 30px;
+    background-color: #EDC86E;
+    margin-top: 30px;
+}
+body>main>.carreJaune>img {
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+
+
+
+
 

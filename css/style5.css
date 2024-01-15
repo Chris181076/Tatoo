@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+
 .row-iimit-size {
     min-width: 430px;
     width: 100%;
@@ -9,13 +10,14 @@
 }
 .flex {
     display: flex;
+
 }
 #head{
     height: 300px;
     width: 430px;
     background: url(../img/background-image-3325335_1280.webp);
     background-size: cover;
-    
+    position: absolute;
 }
 #MySidenav {
     height: 100%;
@@ -36,6 +38,7 @@
 #MySidenav>ul {
     list-style-type: none;
 }
+
 img {
     display: flex;
 }
@@ -60,59 +63,7 @@ main {
     height: 1700px;
     width: 430px;
     background-color: black;
+    position: relative;
     margin-top:300px;
-}
-.titre {
-    padding-top: 30px;
-}
 
-.titre>img {
-    width: 95px;
-    height: 31px;
-    padding-left: 35%;
 }
-main>.titre>h1 {
-    font-size: 15px;
-    color: #EDC86E;
-    font-family: 'Comfortaa', sans-serif;
-    margin: 0 auto;
-    padding-left: 27%;
-   
-}
-main>figure {
-    display: flex;
-    padding-top: 30px;
-}
-main>figure>img {
-    width: 159px;
-    height: 212px;
-    padding-left: 30px;
-}
-.size{
-    font-size: 15px;
-}
-main>p {
-    font-size: 10px;
-    color: #EDC86E;
-    padding-top: 30px;
-    font-family: 'Comfortaa', sans-serif;
-    text-align: center;
-}
-.button {
-    width: 113px;
-    height: 31px;
-    background-color: #EDC86E;
-    margin: 0 auto;
-    margin-top: 40px;
-    border-radius: 10px;
-}
-.button>p {
-    font-family:'Comfortaa', sans-serif;
-    font-size: 12px;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height:31px;
-}
-
