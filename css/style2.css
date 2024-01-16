@@ -1,7 +1,9 @@
 *{
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
+
 .row-iimit-size {
     min-width: 430px;
     width: 100%;
@@ -15,39 +17,65 @@
     width: 430px;
     background: url(../img/background-image-3325335_1280.webp);
     background-size: cover;
-    
+    position: absolute;
 }
-#MySidenav {
-    height: 100%;
-    width: 150px;
-    z-index: 1;
-    top: 0;
-    background-color: #E5E8E8;
-    padding-top: 30px;
-    transition: left 0.5s ease;
+body>main {
+    margin-top: 300px; /* ?  pourquoi j'ai dû ajuster? */
+    position: absolute;
+}
+.main-menu {
     display: none;
 }
-#MySidenav>a{
-    text-decoration: none;
-    font-size: 12px;
-    color: #000;
-    transition: 0.3s;
+body>header>.main-menu>ul {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding-left: 160px; /* ?*/
 }
-#MySidenav>ul {
-    list-style-type: none;
+body>header>.main-menu > ul > li {
+    padding-bottom: 20px;
+}
+
+body>header>.main-menu > ul > li > a {
+    display:block;
+    height: 80px;
+    line-height: 80px;
+    padding: 0 15px;
+    font-family: 'Comfortaa', sans-serif;
+    color: #EDC86E;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+    font-size: 12px;  
 }
 img {
     display: flex;
 }
-#burger {
-    cursor: pointer;
-   
-}
-
 #burger>img {
     width: 30px;
     height: 30px;
     padding-left: 400px;
+}
+body>header>.main-menu>.close {
+    position: absolute;
+    top: 0;
+    padding-left: 270px;
+    color: #EDC86E;
+    cursor: pointer;
+    
+}
+header>nav>.close>.carreJaune>img {
+    width: 20px;
+    height: 20px;
+}
+body>header>.main-menu>.close>.carreJaune {
+    width: 20px;
+    height: 20px;
+    background-color: #EDC86E;
+   
+}
+body>header>.clickable-area {
+    display: inline-block;
 }
 #head>img:last-child {
     width: 200px;
@@ -61,6 +89,8 @@ main {
     width: 430px;
     background-color: black;
     margin-top:300px;
+    margin-top: 0;
+    
 }
 .titre {
     padding-top: 30px;
@@ -69,15 +99,13 @@ main {
 .titre>img {
     width: 95px;
     height: 31px;
-    padding-left: 35%;
+    margin: 0 auto;
 }
 main>.titre>h1 {
     font-size: 15px;
     color: #EDC86E;
     font-family: 'Comfortaa', sans-serif;
-    margin: 0 auto;
-    padding-left: 27%;
-   
+    text-align: center;
 }
 main>figure {
     display: flex;
@@ -115,4 +143,19 @@ main>p {
     align-items: center;
     height:31px;
 }
+main>.block>.carreJaune {
+    width: 30px;
+    height: 30px;
+    background-color: #EDC86E;
+    border-radius: 10px;
+}
+main>.block>.carreJaune>img {
+    width: 30px;
+    height: 30px;
+}
+main>.block { /* ça veut pas s'aligner */
+    display: flex;   
+}
+
+
 

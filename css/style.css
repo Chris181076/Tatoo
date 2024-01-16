@@ -1,16 +1,16 @@
 *{
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
 .row-iimit-size {
     min-width: 430px;
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 .flex {
     display: flex;
-
 }
 #head{
     height: 300px;
@@ -19,39 +19,58 @@
     background-size: cover;
     position: absolute;
 }
-#MySidenav {
-    height: 100%;
-    width: 150px;
-    z-index: 1;
-    top: 0;
-    background-color: #E5E8E8;
-    padding-top: 30px;
-    transition: left 0.5s ease;
+.main-menu {
     display: none;
 }
-#MySidenav>a{
-    text-decoration: none;
-    font-size: 12px;
-    color: #000;
-    transition: 0.3s;
+body>header>.main-menu>ul {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding-left: 160px; 
 }
-#MySidenav>ul {
-    list-style-type: none;
+body>header>.main-menu > ul > li {
+    padding-bottom: 20px;
 }
 
+body>header>.main-menu > ul > li > a {
+    display:block;
+    height: 80px;
+    line-height: 80px;
+    padding: 0 15px;
+    font-family: 'Comfortaa', sans-serif;
+    color: #EDC86E;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+    font-size: 12px;   
+}
 img {
     display: flex;
 }
-#burger {
-    cursor: pointer;
-   
-}
-
 #burger>img {
     width: 30px;
     height: 30px;
     padding-left: 400px;
 }
+body>header>.main-menu>.close {
+    position: absolute;
+    top: 0;
+    padding-left: 270px;
+    color: #EDC86E;
+    cursor: pointer;
+    
+}
+header>nav>.close>.carreJaune>img {
+    width: 20px;
+    height: 20px;
+}
+body>header>.main-menu>.close>.carreJaune {
+    width: 20px;
+    height: 20px;
+    background-color: #EDC86E;
+   
+}
+
 #head>img:last-child {
     width: 200px;
     height: 200px;
@@ -63,21 +82,26 @@ main {
     height: 1700px;
     width: 430px;
     background-color: black;
-    position: relative;
+    position: absolute;
     margin-top:300px;
 
+
+}
+body>main>#images {
+    margin-top: 60px;
 }
 body>main>#images>img {
     width: 159px;
     height: 212px;
     margin: 0  auto;
-    padding: 40px;;
+    margin-top: 30px;
 }
 body>main>h1{
     display: block;
     color:  #EDC86E;
     font-size: 10px;
     text-align: center;
+    margin-top: 60px;
     padding-left: 80px;
     padding-right: 80px;
     font-family: 'Comfortaa', sans-serif;
@@ -91,7 +115,7 @@ body>main>h1{
     height: 31px;
     background-color: #EDC86E;
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 60px;
     border-radius: 10px;
 }
 .button>p {
@@ -103,6 +127,20 @@ body>main>h1{
     align-items: center;
     height:31px;
 }
+main>.block>.carreJaune {
+    width: 30px;
+    height: 30px;
+    background-color: #EDC86E;
+    border-radius: 10px;
+}
+main>.block>.carreJaune>img {
+    width: 30px;
+    height: 30px;
+}
+main>.block { /* ça veut pas s'aligner */
+    display: flex;   
+}
+
 
 
 

@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 
 .row-iimit-size {
@@ -10,7 +11,6 @@
 }
 .flex {
     display: flex;
-
 }
 #head{
     height: 300px;
@@ -19,24 +19,30 @@
     background-size: cover;
     position: absolute;
 }
-#MySidenav {
-    height: 100%;
-    width: 150px;
-    z-index: 1;
-    top: 0;
-    background-color: #E5E8E8;
-    padding-top: 30px;
-    transition: left 0.5s ease;
+.main-menu {
     display: none;
 }
-#MySidenav>a{
-    text-decoration: none;
-    font-size: 12px;
-    color: #000;
-    transition: 0.3s;
+body>header>.main-menu>ul {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding-left: 160px; 
 }
-#MySidenav>ul {
-    list-style-type: none;
+body>header>.main-menu > ul > li {
+    padding-bottom: 20px;
+}
+
+body>header>.main-menu > ul > li > a {
+    display:block;
+    height: 80px;
+    line-height: 80px;
+    padding: 0 15px;
+    font-family: 'Comfortaa', sans-serif;
+    color: #EDC86E;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: absolute;
+    font-size: 12px;   
 }
 
 img {
@@ -52,6 +58,24 @@ img {
     height: 30px;
     padding-left: 400px;
 }
+body>header>.main-menu>.close {
+    position: absolute;
+    top: 0;
+    padding-left: 270px;
+    color: #EDC86E;
+    cursor: pointer;
+    
+}
+header>nav>.close>.carreJaune>img {
+    width: 20px;
+    height: 20px;
+}
+body>header>.main-menu>.close>.carreJaune {
+    width: 20px;
+    height: 20px;
+    background-color: #EDC86E;
+   
+}
 #head>img:last-child {
     width: 200px;
     height: 200px;
@@ -60,10 +84,61 @@ img {
 }
 
 main {
-    height: 1700px;
+    height: 1000px;
     width: 430px;
     background-color: black;
-    position: relative;
+    position: absolute;
     margin-top:300px;
 
 }
+.titre {
+    padding-top: 30px;
+}
+
+.titre>img {
+    width: 95px;
+    height: 31px;
+    margin: 0 auto;
+}
+main>.titre>h1 {
+    font-size: 15px;
+    color: #EDC86E;
+    font-family: 'Comfortaa', sans-serif;
+    text-align: center;
+}
+main>figure>img{
+    width: auto;
+    height: 213px;
+    margin: 0 auto;
+    padding-top: 30px;
+    
+}
+main>.blocktexte{
+    width: 213px;
+    height: auto;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+main>.blocktexte>p{
+    font-size: 10px;
+    color: #000;
+    font-family: 'Comfortaa', sans-serif;
+    padding-top: 10px; 
+    text-align: center;
+}
+main>.block>.carreJaune {
+    width: 30px;
+    height: 30px;
+    background-color: #EDC86E;
+    border-radius: 10px;
+}
+main>.block>.carreJaune>img {
+    width: 30px;
+    height: 30px;
+}
+main>.block { /* ça veut pas s'aligner */
+    display: flex;   
+}
+
+
