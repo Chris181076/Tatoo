@@ -12,4 +12,3 @@ closeBtn.addEventListener("click", function(event) {
     mainMenu.style.display ="none";
 });
 
-

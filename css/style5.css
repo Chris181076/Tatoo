@@ -11,7 +11,7 @@
 }
 .flex {
     display: flex;
-}
+} 
 #head{
     height: 300px;
     width: 430px;
@@ -21,15 +21,16 @@
 }
 .main-menu {
     display: none;
-}
+} 
 body>header>.main-menu>ul {
     display: flex;
     flex-direction: column;
     align-items: end;
     padding-left: 160px; 
+    list-style-type: none;
 }
 body>header>.main-menu > ul > li {
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 
 body>header>.main-menu > ul > li > a {
@@ -132,13 +133,18 @@ main>.block>.carreJaune {
     height: 30px;
     background-color: #EDC86E;
     border-radius: 10px;
+    display: flex;
 }
 main>.block>.carreJaune>img {
     width: 30px;
     height: 30px;
 }
-main>.block { /* ça veut pas s'aligner */
-    display: flex;   
+main>.block { 
+    display: inline-block;  
+    margin-top: 60px;
+    margin-left: 10px;   /*pourquoi ils sont autant écartés?*/
 }
-
+body>header>.main-menu > ul > li:hover > a {
+    color: #85F5E1 ;
+}
 

@@ -27,9 +27,10 @@ body>header>.main-menu>ul {
     flex-direction: column;
     align-items: end;
     padding-left: 110px; 
+    list-style-type: none;
 }
 body>header>.main-menu > ul > li {
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     margin-left: 55px; /* ? */
 }
 
@@ -164,13 +165,18 @@ main>.block>.carreJaune {
     height: 30px;
     background-color: #EDC86E;
     border-radius: 10px;
+    display: flex;
 }
 main>.block>.carreJaune>img {
     width: 30px;
     height: 30px;
 }
-main>.block { /* ça veut pas s'aligner */
-    display: flex;   
+main>.block { 
+        display: inline-block;  
+        margin-top: 60px;
+        margin-left: 10px;  
 }
-
+body>header>.main-menu > ul > li:hover > a {
+    color: #85F5E1 ;
+}
 

@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     text-decoration: none;
+    
 }
 
 .row-iimit-size {
@@ -18,22 +19,29 @@
     background: url(../img/background-image-3325335_1280.webp);
     background-size: cover;
     position: absolute;
+    
 }
 .main-menu {
     display: none;
 }
+
 body>header>.main-menu>ul {
     display: flex;
     flex-direction: column;
     align-items: end;
-    padding-left: 160px; 
+    padding-left: 160px;
+    position: relative; 
 }
 body>header>.main-menu > ul > li {
-    padding-bottom: 20px;
+    padding-bottom: 40px;
+   
+}
+body>header>.main-menu > ul {
+    list-style-type: none;
 }
 
 body>header>.main-menu > ul > li > a {
-    display:block;
+    display: block;
     height: 80px;
     line-height: 80px;
     padding: 0 15px;
@@ -42,16 +50,27 @@ body>header>.main-menu > ul > li > a {
     font-weight: 700;
     text-transform: uppercase;
     position: absolute;
-    font-size: 12px;   
+    font-size: 12px; 
+    white-space: nowrap;    
+}
+header>.main-menu>ul>li>a {
+    width: 80px;
+}
+body>header>nav>.clickable-area {
+    display: inline-block;
 }
 img {
     display: flex;
+}
+#burger{
+    position: relative;
 }
 #burger>img {
     width: 30px;
     height: 30px;
     padding-left: 400px;
 }
+ 
 body>header>.main-menu>.close {
     position: absolute;
     top: 0;
@@ -83,7 +102,8 @@ main {
     width: 430px;
     background-color: black;
     position: absolute;
-    margin-top:300px;
+    margin-top: 300px;
+   
 
 
 }
@@ -127,20 +147,24 @@ body>main>h1{
     align-items: center;
     height:31px;
 }
-main>.block>.carreJaune {
+body>main>.block>.carreJaune {
     width: 30px;
     height: 30px;
     background-color: #EDC86E;
     border-radius: 10px;
+    display: flex;
 }
-main>.block>.carreJaune>img {
+body>main>.block>.carreJaune>img {
     width: 30px;
     height: 30px;
 }
-main>.block { /* ça veut pas s'aligner */
-    display: flex;   
+body>main>.block {
+        display: inline-block;  
+        margin-top: 60px;
+        margin-left: 10px;
 }
 
-
-
+body>header>.main-menu > ul > li:hover > a {
+    color: #85F5E1;
+}
 

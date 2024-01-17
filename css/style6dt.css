@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    
+}
+header {
+    height: 351px;
+    background: url(../img/background-image-3325335_1280.webp) no-repeat;
+    background-size: cover;
+    background-position: center;  
+    position: relative;
+}
+
+header>img:last-child {
+    width: 323px;
+    height: 326px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+}
+body>header>#burger>img:first-child {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    display: block;
+    top: 10px;
+    right: 10px; /* le flex ne fonctionne pas, à cause de moi, mais je ne comprend pas pourquoi*/ 
+}
+
+header>nav>ul {
+    list-style-type: none;
+    position: absolute;
+    display: block;
+    right: 10px;
+    top: 50px;
+    background-color: #EDC86E;
+}
+.main-menu > ul > li > a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 15px;
+    font-family: 'Comfortaa', sans-serif;
+    color: #222;
+    font-weight: 700;
+    font-size: 1rem;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+body>header>.main-menu {
+    display: none;
+}
+body>header>.main-menu>a:first-child {
+    color: #EDC86E;
+    position: absolute;
+    top: 30px;
+    right: 180px;
+}
+
+main>.navmain {
+    height: 80px;
+    background-color: black;
+}
+        
+    
+main>.navmain> .main-menu1 > ul > li > a {
+        display: block;
+        height: 100%;
+        line-height: 80px;
+        padding: 0 15px;
+        font-family: 'Comfortaa', sans-serif;
+        color: #EDC86E;
+        font-weight: 700;
+        font-size: 1rem;
+        text-transform: uppercase;
+        white-space: nowrap;
+    }
+main > .navmain > .main-menu1 > ul {
+        list-style-type: none;
+        display: flex; 
+        justify-content: space-around; 
+        align-items: center;
+        height: 100%; 
+        margin: 0;
+        padding: 0;
+    } 
+main >.navmain>.main-menu1 > ul > li {
+        margin: 0;
+    }  
+main {
+        height: 1623px;
+        background-color: black;
+    }
+body>main>#images>img {
+        width: 215px;
+        height: 368px;
+        margin: 80px 105px;
+        /* je ne sais pas centrer */
+ }
+ main>h1 {
+    color: #EDC86E;
+    font-size : 24px;
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: lighter;
+    text-align: center;
+    margin: 60px 200px;
+ }
+ .size {
+    font-size: 32px;
+ }
+ body>main>#button {
+    width: 250px;
+    height: 64px;
+    background-color: #EDC86E;
+    margin: 0 auto;
+    margin-top: 60px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body>main>#button>p {
+    font-family:'Comfortaa', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    height:31px;
+}
+main>#block>.carreJaune {
+    width: 60px;
+    height: 60px;
+    background-color: #EDC86E;
+    border-radius: 10px;
+    display: flex;
+}
+main>#block>.carreJaune>img {
+    width: 60px;
+    height: 60px;
+}
+main>#block { 
+    display: inline-block;  
+    margin-top: 60px;
+    margin-left: 10px;
+}
+
+@media screen and (min-width: 950px){
+   main>.navmain>.main-menu {
+        display: none;
+    }
+
+    body>header>.main-menu {
+        display: block;
+    }
+}
+
+
+    
