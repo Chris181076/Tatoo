@@ -89,84 +89,90 @@ main > .navmain > .main-menu1 > ul {
 main >.navmain>.main-menu1 > ul > li {
         margin: 0;
     }  
-main {
+main {    
         height: auto;
         background-color: black;
     }
 body>main>.titre {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
 body>main>.titre>img{
-    width: 322px;
-    height: auto;
-}
+        width: 322px;
+        height: auto;
+    }
 main>.titre>h1 {
-    color: #EDC86E;
-    font-size: 30px;
-    font-family: 'Comfortaa', sans-serif;
-   
-}
-main>#grille>img {
-    width: 365px;
-    height: 550px;
-    margin: 60px 0;
-}
-#grille {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-   
-}
-h1,h2 {
-  font-family: 'Comfortaa', sans-serif;
-  font-size: 22px;  
-  color:#EDC86E;
-  text-align: center;
-}
-h2{
+        color: #EDC86E;
+        font-size: 30px;
+        font-family: 'Comfortaa', sans-serif;      
+    }
+main>#souscontact>#formulaire {
+    background-image: url(../img/chouette.jpg);
+    width: 523px;
+    height: 900px;
     margin: 60px;
+    border-radius: 15px;
+    
 }
-body>main>#button {
-    width: 250px;
-    height: 64px;
+main>#souscontact>#formulaire>p {
+    text-transform: uppercase;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+    padding: 50px;
+}
+body>main>#souscontact>#formulaire>.encart{
+    width: 302px;
+    height: 45px;
     background-color: #EDC86E;
-    margin: 0 auto;
-    margin-top: 60px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-body>main>#button>p {
-    font-family:'Comfortaa', sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    height:31px;
-}
-main>#block>.carreJaune {
-    width: 60px;
-    height: 60px;
-    background-color: #EDC86E;
-    border-radius: 10px;
-    display: flex;
-    margin-bottom: 60px;
-}
-main>#block>.carreJaune>img {
-    width: 60px;
-    height: 60px;
-}
-main>#block { 
-    display: inline-block;  
-    margin-top: 60px;
-    margin-left: 10px;
-}
-body>header>.main-menu > ul > li:hover > a {
-    color: #85F5E1;
+    border-radius: 15px;
+    margin: 0 auto;   
 }
 
+body>main>#souscontact>#formulaire>.encart>p {
+    color: #000;
+    font-family: 'Comfortaa', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    font-weight: 650;
+    margin-top: 80px;
+}
+body>main>#souscontact>#formulaire>.encart1 {
+    width: 300px;
+    height: 182px;
+    background-color: #EDC86E;
+    border-radius: 15px;
+    margin: 30px auto;
+
+}
+body>main>#souscontact>#formulaire>.encart1>p{
+    color: #000;
+    font-family: 'Comfortaa', sans-serif;
+    padding: 10px 10px;
+    font-weight: bold;
+}
+main>#souscontact>#grille {
+    display: grid;
+    width: 100%;
+    max-width: 400px;
+    margin:0 auto;
+    grid-template-columns: repeat(2,1fr);
+    background-color: #EDC86E;
+}
+main>#souscontact>#grille>.block>img {
+    width: 30px;
+    height: 30px;
+}
+main>#souscontact>#grille>.block>p {
+    color: #000;
+    font-size:20px ;
+}
+main>#souscontact {
+    display: flex;
+}
 

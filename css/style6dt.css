@@ -73,7 +73,7 @@ main>.navmain> .main-menu1 > ul > li > a {
         font-family: 'Comfortaa', sans-serif;
         color: #EDC86E;
         font-weight: 700;
-        font-size: 1rem;
+        font-size: 1.5rem;
         text-transform: uppercase;
         white-space: nowrap;
     }
@@ -93,11 +93,13 @@ main {
         height: 1623px;
         background-color: black;
     }
-body>main>#images>img {
+body>main>#grille{
+    display: flex;
+    justify-content: space-around;
+}
+body>main>#grille>img {
         width: 215px;
-        height: 368px;
-        margin: 80px 105px;
-        /* je ne sais pas centrer */
+        height: 368px;             
  }
  main>h1 {
     color: #EDC86E;
@@ -144,14 +146,18 @@ main>#block {
     margin-left: 10px;
 }
 
-@media screen and (min-width: 950px){
-   main>.navmain>.main-menu {
+@media screen and (max-width: 1440px){
+   header>.main-menu {
         display: none;
     }
 
-    body>header>.main-menu {
+    body>header>#burger {
         display: block;
+        z-index: 5555;
     }
+}
+body>header>.main-menu > ul > li:hover > a {
+    color: #85F5E1;
 }
 
 
