@@ -168,5 +168,19 @@ main>#block {
 body>header>.main-menu > ul > li:hover > a {
     color: #85F5E1;
 }
+@media screen and (max-width: 1129px){
+    .main-menu1 {
+        display: none;
+    }
+    #grille {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media screen and (max-width: 743px){
+    #grille {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+}
 
 

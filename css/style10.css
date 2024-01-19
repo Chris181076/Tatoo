@@ -12,7 +12,7 @@ header {
     position: relative;
 }
 
-header>img:last-child {
+header>figure>a>img {
     width: 323px;
     height: 326px;
     position: absolute;
@@ -92,12 +92,15 @@ main >.navmain>.main-menu1 > ul > li {
 main {    
         height: auto;
         background-color: black;
+        
+      
     }
 body>main>.titre {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-bottom: 60px;
     }
 body>main>.titre>img{
         width: 322px;
@@ -108,44 +111,31 @@ main>.titre>h1 {
         font-size: 30px;
         font-family: 'Comfortaa', sans-serif;      
     }
-body>main>h2 {
-    color:#EDC86E;
-    font-family: 'Comfortaa', sans-serif;
-    font-size: 22px;
-    margin: 60px 150px;
+main>.boxes-container {
+   display: flex;
+   justify-content: space-around;
 }
-.size{
-    font-size: 32px;
-}
-main>#grille>img {
-    width: 365px;
-    height: 550px;
-    margin: 60px 0;
-}
-#grille {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-   
-}
-body>main>#button {
-    width: 250px;
-    height: 64px;
-    background-color: #EDC86E;
-    margin: 0 auto;
-    margin-top: 60px;
-    border-radius: 10px;
+
+main>.boxes-container>.box>figure>img {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 36.7em;
+    width: 35.75em;
+    border-top-left-radius: 1em;   
+    border-top-right-radius: 1em;
 }
-body>main>#button>p {
-    font-family:'Comfortaa', sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    height:31px;
+main>.boxes-container>.box {
+    background-color: #fff;
+    height: 100%;
+    width: 572px;
+    border-radius: 15px;
+    
+}
+main>.boxes-container>.box>p {
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 20px;
+    color: #000;
+    text-align: justify;
+    padding: 15px;
 }
 main>#block>.carreJaune {
     width: 60px;
@@ -167,19 +157,15 @@ main>#block {
 body>header>.main-menu > ul > li:hover > a {
     color: #85F5E1;
 }
-h2 {
-    text-align: center;
-}
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 1302px) {
     .main-menu1 {
         display: none;
     }
-    #grille {
-        grid-template-columns: repeat(2,1fr);
-    }
+    main>.boxes-container {
+            flex-direction: column; 
+            margin:30px 30px;
+        }
+    
+    
 }
-@media screen and (max-width: 870px) {
-    #grille {
-        grid-template-columns: repeat(1,1fr);
-    }
-}
+
