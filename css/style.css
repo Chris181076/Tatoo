@@ -96,7 +96,7 @@ body>header>.main-menu>.close>.carreJaune {
    
 }
 
-#head>img:last-child {
+#head>a>img:last-child {
     width: 200px;
     height: 200px;
     padding-left: 230px;
@@ -104,7 +104,7 @@ body>header>.main-menu>.close>.carreJaune {
 }
 
 main {
-    height: 1700px;
+    height: auto;
     width: 430px;
     background-color: black;
     position: absolute;
@@ -163,6 +163,7 @@ body>main>.block>.carreJaune {
 body>main>.block>.carreJaune>img {
     width: 30px;
     height: 30px;
+    
 }
 body>main>.block {
         display: inline-block;  

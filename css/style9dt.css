@@ -243,5 +243,14 @@ body>header>.main-menu > ul > li:hover > a {
         display: block;
         margin: 10px;
     }
+    main>#block {
+        margin-top: 450px;
+    }
+    header>nav>ul {
+        z-index: 5555;
+    }
+    body>header>.main-menu>a:first-child {
+        z-index: 5555;
+    }
 
 }
