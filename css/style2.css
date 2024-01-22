@@ -113,6 +113,7 @@ main {
 }
 main>.titre {
     padding-top: 30px;
+    text-align: center;
 }
 
 main>.titre>img {
